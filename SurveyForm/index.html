@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<h1 id="title">Survey Form</h1>
+<body>
+  <p id="description">Please fill out this Survey Form</p>
+  <form id="survey-form">
+  <fieldset>
+    <label id="name-label">Enter your name: <input id="name" name="name" type="text" placeholder="Write your name" required></label>
+    <label id="email-label">Enter your email: <input id="email" name="email" type="email" placeholder="Write your email" required></label>
+    <label id="number-label">Enter your number: <input id="number" name="number" type="number" min="13" max="120" placeholder="Write a number"></label>
+    <label>Do you have coding experience:
+      <select id="dropdown">
+      <option value="">(select one)</option>
+      <option value="with">With coding experience</option>
+      <option value="without">Without coding experience</option>
+      </select>
+      </label>
+  </fieldset>
+      <fieldset>
+        <legend>Account type (required)</legend>
+        <label for="personal-account"><input id="personal-account" type="radio" name="account-type" class="inline" value="personal" checked /> Personal</label>
+        <label for="business-account"><input id="business-account" type="radio" name="account-type" class="inline" value="business"/> Business</label>
+      </fieldset>
+      <fieldset>
+        <legend for="checkbox">Which of this social media platforms you know?</legend>
+        <input class="inline" id="checkbox" type="checkbox" required name="social-media" value="facebook" checked>Facebook  </input>
+        <input class="inline" id="checkbox" type="checkbox" required name="social-media" value="instagram">Instagram  </input>
+        <input class="inline" id="checkbox" type="checkbox" required name="social-media" value="twitter">Twitter  </input>
+        <input class="inline" id="checkbox" type="checkbox" required name="social-media" value="telegram">Telegram  </input>
+        <input class="inline" id="checkbox" type="checkbox" required name="social-media" value="pinterest">Pinterest  </input>
+        <input class="inline" id="checkbox" type="checkbox" required name="social-media" value="whatsapp"> Whatsapp  </input>
+        <input class="inline" id="checkbox" type="checkbox" required name="social-media" value="other">Other(s)  </input>
+        </fieldset>
+      <label for="how">How are you? :
+      <textarea id="how" name="how" rows="3" cols="30" placeholder="Write how do you feeling..."></textarea>
+      </label>
+   <button class="pushable" id="submit" type="submit" value="submit">
+      <span class="shadow"></span>
+      <span class="edge"></span>
+      <span class="front">
+        Submit
+      </span>
+    </button>
+  </form>
+</body>
+</html>
