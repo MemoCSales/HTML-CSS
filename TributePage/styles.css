@@ -1,0 +1,147 @@
+@media (prefers-reduced-motion: no-preference) {
+    * {
+        scroll-behavior: smooth;
+    }
+}
+
+#image {
+    max-width: 100%;
+     height: auto;
+     display: block;
+     justify-content: center;
+     align-items: center;
+     border-radius: 10px;
+   }
+   
+   header {
+     width: 100%;
+     height: auto;
+     display: flex;
+     background: #564D4A;
+     justify-content: space-between;
+     align-items: center;
+     position: fixed;
+     top: 0;
+   }
+   
+   main {
+       padding-top: 80px;
+       width: 90%;
+       margin: 0 auto 10px auto;
+       max-width: 900px;
+   }
+   
+   body {
+    background: #F7F4F3;
+    color: #1b1b32;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+   }
+
+   a {
+    font-family: 'Open Sans', sans-serif;
+   }
+
+   h1 {
+       color: #FFFFFF;
+       font-size: min(5vw, 1.2em);
+       text-align: center;
+       margin: 10px;
+   }
+
+   nav {
+    width: 50%;
+    max-width: 300px;
+    height: 50px;
+   }
+
+   nav > ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-inline-start: 0;
+    margin-block: 0;
+    height: 100%;
+   }
+
+   nav > ul> li {
+    color: #dfdfe2;
+    margin: 0 0.2rem;
+    padding: 0.2rem;
+    display: block;
+   }
+
+   nav > ul > li:hover {
+    background-color: #FFFFFF;
+    color: #564D4A;
+    cursor: pointer;
+   }
+
+   li > a {
+    color: inherit;
+    text-decoration: none;
+   }
+
+   #tribute-info {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for h3 */
+#tribute-info h3 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Style for p */
+#tribute-info p {
+    color: #666;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+#climbing-ascents {
+    font-family: 'Open Sans', sans-serif;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 600px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#climbing-ascents h2 {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#climbing-ascents ul {
+    list-style: none;
+    padding: 0;
+}
+
+#climbing-ascents li {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+#climbing-ascents li:last-child {
+    border-bottom: none;
+}
+
+#climbing-ascents li strong {
+    color: #555;
+}
+
+footer {
+    background-color: #564D4A;;
+    display: flex;
+    justify-content: center;
+  }
