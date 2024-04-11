@@ -1,76 +1,136 @@
 @media (prefers-reduced-motion: no-preference) {
-    * {
-        scroll-behavior: smooth;
-    }
+  * {
+      scroll-behavior: smooth;
+  }
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
-  margin: 0;
-  line-height: 1.5;
+font-family: 'Open Sans', sans-serif;
+margin: 0;
+line-height: 1.5;
 }
 
 header {
-  color: black;
-  display: block;
-  unicode-bidi: isolate;
-  text-align: center;
-  font-size: 1.5em;
+color: black;
+display: block;
+unicode-bidi: isolate;
+text-align: center;
+font-size: 1.5em;
+margin-top: 20px;
 }
 
 #navbar {
-  position: fixed;
-  left: 0px;
-  top: 0px;
-  bottom: 0px;
-  width: 300px; /*adjust as needed */
-  min-width: 290px;
-  background-color: #f3f3f3;
-  overflow-y: auto;
+position: fixed;
+left: 0px;
+top: 0px;
+bottom: 0px;
+width: 300px; /*adjust as needed */
+min-width: 290px;
+background-color: #f3f3f3;
+overflow-y: auto;
 }
 
 #navbar header {
-  padding: 10px;
-  background-color: #ddd;
+padding: 10px;
+background-color: #ddd;
 }
 
 .nav-link {
-  display: block;
-  padding: 10px;
-  text-decoration: none;
-  color: #333;
+display: block;
+padding: 10px;
+text-decoration: none;
+color: #333;
 }
 
 .nav-link:hover {
-  background-color: #ccc;
+background-color: #ccc;
 }
 
 #main-doc {
-  margin-left: 205px;
+margin-left: 310px;
+text-align: left;
+margin-top: 20px;
+}
+
+.divider {
+  border-bottom: 2px solid black;
+  margin: 2px 2px;
+}
+
+/* Style for the callout box */
+.callout_box {
+  border-radius: 10px; /* Rounded borders */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow */
+  background-color: #f0f0f0; /* Different background color */
+  padding: 20px; /* Padding for content */
+  position: relative; /* Positioning for icon */
+  padding-left: 40px; /* Add padding for the icon */
+  max-width: 85%;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+/* Style for the lightbulb icon */
+.callout_box::before {
+  content: '\1F4A1'; /* Unicode for lightbulb icon */
+  font-size: 24px; /* Adjust size as needed */
+  position: absolute;
+  top: 50%; /* Center vertically */
+  left: 10px; /* Position on the left side */
+  transform: translateY(-50%); /* Center vertically */
+  color: #ffc107; /* Icon color */
+}
+
+/* Additional styling for text within the callout box */
+.callout_box p {
+  margin-top: 0; /* Remove default margin */
+}
+
+.code_box {
+  border-radius: 5px; /* Rounded borders */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow */
+  background-color: #4c4c4c;
+  padding: 20px; /* Padding for content */
+  margin: 0 10px; /* Margin on the sides */
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace; /* Set a monospace font */
+  font-size: 14px; /* Set font size */
+  line-height: 1.5; /* Set line height */
+  overflow-x: auto; /* Enable horizontal scroll if content exceeds width */
+color: #fff;
+}
+
+/* Additional styling for text within the code box */
+.code_box p {
+  margin-top: 0; /* Remove default margin */
+}
+
+span[class~="variable"] {
+color: #70d3ff;
 }
 
 @media only screen and (max-width: 815px) {
-  #navbar {
-    position: absolute;
-    width: 100%;
-    max-height: 275px;
-    z-index: 1;
-    top: 0;
-    margin: 0;
-    border: none;
-    background-color: #f3f3f3;
-  }
-  .navlink {
-    margin-top: 100rem;
-  }
-  #navbar header {
-    text-align: center;
-    padding:10px;
-  }
-  .nav-link {
-    text-align: center;
-  }
-  #main-doc {
-    margin-top: 225px;
-  }
+#navbar {
+  position: absolute;
+  width: 100%;
+  max-height: 275px;
+  z-index: 1;
+  top: 0;
+  margin: 0;
+  border: none;
+  background-color: #f3f3f3;
+}
+.navlink {
+  margin-top: 100rem;
+}
+#navbar header {
+  text-align: center;
+  padding:10px;
+}
+.nav-link {
+  text-align: center;
+}
+#main-doc {
+  margin-top: 290px;
+  margin-left: 10px;
+}
 }
