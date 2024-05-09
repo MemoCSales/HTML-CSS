@@ -32,24 +32,86 @@
         <p>JavaScript provides several data types to work with, including numbers, strings, booleans, arrays, objects, and more. These data types allow developers to store and manipulate different kinds of information within their programs. For example, numbers are used for mathematical calculations, strings for text manipulation, and booleans for logical operations.</p>
         <p>In order to understand, JavaScript (the programming language that provides intercativity in the Internet), first you need to understand the data types and the variables of the language and how they are created. It would be really helpful when, where and how to use them.</p>
         <h3>Variables</h3>
-        <div class="callout_box">Variables help you remember the value of something for a later use in your code! </div>
-        <p>You can create a variable by following the syntax <code> [keyword]  [name] </code>. Example:</p>
+        <div class="callout_box">Variables helps you remember the value of something for a later use in your code! </div>
+        <p>You can create a variable by following the syntax <code> [keyword][name] </code>. Example:</p>
         <div class="code_box">
             <code>
               <span class="variable">var</span> aVariable;
             </code>
         </div>
-        <p>Paragraph 1</p>
-        <p>Paragraph 1</p>
-        <p>Paragraph 1</p>
-        <p>Paragraph 1</p>
-        <p>Paragraph 1</p>
-        <p>Paragraph 1</p>
+        <p>The key word <span class="variable">var</span> says that a variable will be created, and <code>aVariable</code> is the name of the variable.</p>
+        <h4>Work with variables in block scopes</h4>
+        <p>Using the <code>keyword</code> <span class="variable">let</span> providess the block scope of variables. It is recommended to use it instead of <span class="variable">var</span> to better manage the scope application. </p>
+        <p>JavaScript uses different block scopes, such as, the global block scope and the function block scope, to determine which variables are available in which part of the code.
+          As an example, a global variable is available inside a function because it belong to a global block scope. This is the case for the variables with the <code>keyword</code>
+          <span class="variable">var</span>, they can be visible inside and outside a for loop, which may led to unexpected results. This is  why <span class="variable">let</span> is the 
+          best option because it will available just in the for loop, so its availability could be more predictable.
+        </p>
+        <p>This is the syntax for declaring a variable using <span class="variable">let</span>:</p>
+        <div class="code_box">
+          <code>
+            <span class="variable">let</span> myVariable;
+          </code>
+        </div>
+      <h4>Value assignment</h4>
+      <div class="code_box">
+        <code>
+          myVariable = 123;
+        </code>
+      </div>
+        <p>Now, <code>myVariable</code> has been assigned the value <code>123</code>.</p>
+        <h4>Explicit Initialization</h4>
+        <p>Here a variable is being declare and a value has been assigned to it in the same line:</p>
+        <div class="code_box">
+          <code>
+            <span class="variable">let</span> myVariable = 123;
+          </code>
+        </div>
+        <h3>Constants</h3>
+        <p>Sometimes you don't want to a variable to change its value in your program. This situation may ocurr when using mathematical constant, such as, pi. 
+          To declare and initialize a constant you can use the following syntax:
+          <div class="code_box">
+            <code>
+              <span class="variable">const</span> MY_VARIABLE = 123;
+            </code>
+          </div>
+        </p>
+        <div class="callout_box">Remember:<br> It is recommended to declare a constant with all capital letters! </div>
+        <p>Constants are similar to variables, with 2 exepctions:</p>
+        <ul>
+          <li><em>They must have a value.</em> Constants must be initialized, otherwise it will create an error.</li>
+          <li><em>The reference can not be changed.</em> If the reference of a constant changed after being initiliazed it will create an error.</li>
+        </ul>
+        <p>Let's see some examples:</p>
+        <ul>
+          <li><em>This is not allowed:</em></li>
+          <div class="code_box">
+            <code>
+              <span class="variable">const</span> PI = 3; <br>
+              PI = 4;
+            </code>
+          </div>
+          <li>The following syntax has a protected object reference and is not allowed:.</li>
+          <div class="code_box">
+            <code>
+              <span class="variable">const</span> obj = { a: 3 }; <br>
+              obj = { b: 5 };
+            </code>
+          </div>
+          <li>The next syntax has a object value that is not protected. Then, it is allowed becuase it will change the value of the object, but the reference itself.</li>
+          <div class="code_box">
+            <code>
+              <span class="variable">const</span> obj = { a: 3 }; <br>
+              obj.a = 5;
+            </code>
+          </div>
+        </ul>
       </section>
       <div class="divider"></div>
       <section class="main-section" id="Functions">
         <header>Functions</header>
-        <p>Functions in JavaScript allow developers to encapsulate reusable blocks of code. They can accept parameters as input and return values as output, providing a way to organize and modularize code. Functions can be declared using the function keyword or defined as arrow functions for more concise syntax.</p>
+        <p>Functions in JavaScript allow developers to encapsulate reusable blocks of code. They can accept parameters as input and return values as output, 
+          providing a way to organize and modularize code. Functions can be declared using the function keyword or defined as arrow functions for more concise syntax.</p>
         <p>Paragraph 2</p>
         <p>Paragraph 2</p>
         <p>Paragraph 2</p>

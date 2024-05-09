@@ -14,7 +14,7 @@ header {
 color: black;
 display: block;
 unicode-bidi: isolate;
-text-align: center;
+text-align: left;
 font-size: 1.5em;
 margin-top: 20px;
 }
@@ -47,7 +47,7 @@ background-color: #ccc;
 }
 
 #main-doc {
-margin-left: 310px;
+margin-left: 330px;
 text-align: left;
 margin-top: 20px;
 }
